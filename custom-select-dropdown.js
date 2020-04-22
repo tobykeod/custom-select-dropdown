@@ -1,6 +1,6 @@
-for (const dropdown of document.querySelectorAll('.custom-select-wrapper')) {
+for (const dropdown of document.querySelectorAll('.custom-select')) {
   dropdown.addEventListener('click', function() {
-    this.querySelector('.custom-select').classList.toggle('open');
+    this.classList.toggle('open');
   });
 }
 
