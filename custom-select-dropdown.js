@@ -1,6 +1,8 @@
-document.querySelector('.custom-select-wrapper').addEventListener('click', function() {
-  this.querySelector('.custom-select').classList.toggle('open');
-});
+for (const dropdown of document.querySelectorAll('.custom-select-wrapper')) {
+  dropdown.addEventListener('click', function() {
+    this.querySelector('.custom-select').classList.toggle('open');
+  });
+}
 
 for (const option of document.querySelectorAll('.custom-option')) {
   option.addEventListener('click', function() {
