@@ -10,7 +10,7 @@ for (const option of document.querySelectorAll('.custom-option')) {
     if (!this.classList.contains('selected')) {
       this.parentNode.querySelector('.custom-option.selected').classList.remove('selected');
       this.classList.add('selected');
-      this.closest('.custom-select').querySelector('.custom-select__trigger div').textContent = this.textContent;
+      this.closest('.custom-select').querySelector('.custom-select__trigger div').innerHTML = this.innerHTML;
     }
   })
 }

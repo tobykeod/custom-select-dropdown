@@ -2,19 +2,13 @@
 .custom-select {
   position: relative;
 }
-.custom-select__trigger,
-.custom-option {
+.custom-select__trigger {
   display: flex;
   align-items: center;
-  padding: 0 20px;
-  color: #000;
-  height: 60px;
-  cursor: pointer;
-}
-.custom-select__trigger {
   justify-content: space-between;
-  background: #fff;
+  background: #FFF;
   border: 1px solid #000;
+  cursor: pointer;
 }
 .custom-options {
   position: absolute;
@@ -22,7 +16,7 @@
   top: 100%;
   left: 0;
   right: 0;
-  background: #fff;
+  background: #FFF;
   transition: all 0.5s;
   opacity: 0;
   visibility: hidden;
@@ -37,10 +31,18 @@
   pointer-events: all;
 }
 .custom-option {
+  padding: 12px 20px;
+  color: #000;
+  cursor: pointer;
   transition: all 0.5s;
 }
-.custom-option:hover {
-  background-color: #d8d8d8;
+.custom-options .custom-option:hover {
+  background-color: #D8D8D8;
+}
+.custom-option .caption {
+  margin-top: 2px;
+  font-size: small;
+  color: #6D7278;
 }
 
 /* Dropdown arrow */
@@ -48,6 +50,7 @@
   position: relative;
   height: 12px;
   width: 12px;
+  margin-right: 20px;
 }
 .arrow::before,
 .arrow::after {
